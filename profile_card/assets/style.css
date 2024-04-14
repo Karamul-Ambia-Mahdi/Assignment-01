@@ -1,0 +1,54 @@
+.card{
+    width: 25%;
+    height: 75%;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(/profile_card/assets/background-pic.png);
+    box-shadow: 0px 8px 16px 0px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#profile-pic{
+    width: 35%;
+    height: 25%;
+    border-radius: 100%;
+    margin: 15px 15px 0px 15px;
+}
+
+.container{
+    line-height: 200%;
+    color: aliceblue;
+    text-shadow: 3px 3px 3px rgb(9, 2, 58);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-style: normal;
+    font-size: 35px;
+}
+
+#occupation{
+    font-style: italic;
+    font-size: 25px;
+    text-decoration-line: underline;
+    margin-bottom: 50px;
+}
+
+#description{
+    font-size: 20px;
+}
+
+#email{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#phone{
+    font-size: 25px;
+}
+
