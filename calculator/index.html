@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/calculator/assets/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container mt-5 p-5">
+      <h1>Simple Calculator</h1>
+      <form action="" class="row mt-5">
+        <div class="col-4">
+          <label for="num1" class="form-label">Number 1 :</label>
+          <input type="text" id="num1" class="form-control" />
+        </div>
+        <div class="dropdown col-4">
+          <label for="operators" class="form-label">Operation :</label>
+          <select id="operators" class="form-select">
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <label for="num2" class="form-label">Number 2 :</label>
+          <input type="text" id="num2" class="form-control" />
+        </div>
+      </form>
+      <div class="mt-3">
+        <button class="btn btn-primary mt-3" onclick="calculate();">Calculate</button>
+    </div>
+    <div class="mt-3">
+        <input type="text" id="result" class="alert mt-3 col-12">
+    </div>
+
+    <script>
+
+      function calculate(){
+        let x = parseFloat(document.getElementById('num1').value);
+        let y = parseFloat(document.getElementById('num2').value);
+        let op = document.getElementById('operators').value;
+
+        if(isNaN(x) || isNaN(y)){
+            document.getElementById('result').value = "Please Enter Valid Numbers";
+            result.classList.remove('alert-success')
+            result.classList.add('alert-danger')
+        }
+        else{
+            if(op === '+'){
+                document.getElementById('result').value = x+y;
+                result.classList.remove('alert-danger')
+                result.classList.add('alert-success')
+            }
+            else if(op === '-'){
+                document.getElementById('result').value = x-y;
+                result.classList.remove('alert-danger')
+                result.classList.add('alert-success')
+            }
+            else if(op === '*'){
+                document.getElementById('result').value = x*y;
+                result.classList.remove('alert-danger')
+                result.classList.add('alert-success')
+            }
+            else if(op === '/'){
+                if(x != 0 && y != 0){
+                    document.getElementById('result').value = x/y;
+                    result.classList.remove('alert-danger')
+                    result.classList.add('alert-success')
+                }
+                else{
+                    document.getElementById('result').value = "Division by zero is not possible";
+                    result.classList.remove('alert-success')
+                    result.classList.add('alert-danger')
+                }
+            }
+        }
+    }
+
+    </script>
+  </body>
+</html>
