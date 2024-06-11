@@ -1,33 +1,35 @@
 body{
-    background-image: url(/profile_card/assets/background-pic.png);
+    width: 99%;
+    height: 729px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./background-pic.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card{
-    width: 25%;
-    height: 75%;
+    width: 350px;
+    height: auto;
     margin: auto;
     padding: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(/profile_card/assets/background-pic.png);
+    background-image: url("./background-pic.png");
     box-shadow: 0px 8px 16px 0px;
     border-radius: 20px;
     text-align: center;
 }
 
 #profile-pic{
-    width: 35%;
-    height: 25%;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
-    margin: 15px 15px 0px 15px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .container{
-    line-height: 200%;
+    line-height: 30px;
     color: aliceblue;
     text-shadow: 3px 3px 3px rgb(9, 2, 58);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -35,26 +37,19 @@ body{
 
 h1{
     font-style: normal;
-    font-size: 35px;
+    font-size: 28px;
 }
 
 #occupation{
     font-style: italic;
-    font-size: 25px;
+    font-size: 23px;
     text-decoration-line: underline;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-#description{
-    font-size: 20px;
-}
-
-#email{
-    font-size: 25px;
-    margin-top: 50px;
-}
-
-#phone{
-    font-size: 25px;
+#description, #email, #phone{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 3px;
 }
 
